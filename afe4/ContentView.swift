@@ -15,7 +15,7 @@ struct ContentView: View {
                     .cornerRadius(50)
                     .frame(width:350, height: 180)
                     .foregroundColor(Color("greenStudent"))
-                Text("numero utile")}
+                Text("numero IMPORTANT")}
             ZStack{
             
             Rectangle()         
@@ -25,7 +25,7 @@ struct ContentView: View {
                     .foregroundColor(Color("greenStudent"))
                 HStack{
                     VStack{
-                        Text("Harcelement") ;
+                        Text("medecin") ;
                         Text("0909090909")
                        
                         
