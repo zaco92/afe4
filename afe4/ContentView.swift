@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             ZStack{
                 Rectangle()         
-                    .cornerRadius(20)
+                    .cornerRadius(50)
                     .frame(width:350, height: 180)
                     .foregroundColor(Color("greenStudent"))
                 Text("numero utile")}
