@@ -25,100 +25,7 @@ struct ContentView: View {
                     .foregroundColor(Color("greenStudent"))
                 Text("CONTACTS IMPORTANT")
             }
-            List{
-                VStack{
-                    ZStack{
-                        
-                        Rectangle()
-                            .cornerRadius(20)
-                            .frame(width:350, height: 100)
-                        
-                            .foregroundColor(Color.gray)
-                        HStack{
-                            VStack{
-                                Text("medecin") ;
-                                Text("0909090909")
-                                
-                                
-                            }
-                            .padding(20)
-                            Image("phone-call")
-                                .resizable()
-                                .frame(width:30,height: 30)
-                                .background(
-                                    Circle()
-                                        .foregroundColor(.green)
-                                    
-                                        .frame(width:70, height:70)                            )
-                            
-                        }
-                    }
-                    VStack{
-                        
-                        
-                        ZStack{
-                            
-                            Rectangle()
-                                .cornerRadius(20)
-                                .frame(width:350, height: 100)
-                            
-                                .foregroundColor(Color.gray)
-                            HStack{
-                                VStack{
-                                    Text("infirmerie") ;
-                                    Text("0909090909")
-                                    
-                                    
-                                }
-                                .padding(20);                            Image("phone-call")
-                                .resizable()
-                                .frame(width:30,height: 30)
-                                .background(
-                                    Circle()
-                                        .foregroundColor(.green)
-                                        .frame(width:70, height:70)                                   )
-                                
-                                
-                                
-                                
-                            }
-                        }
-                        
-                        VStack{
-                            
-                            
-                            ZStack{
-                                
-                                Rectangle()
-                                    .cornerRadius(20)
-                                    .frame(width:350, height: 100)
-                                
-                                    .foregroundColor(Color.gray)
-                                HStack{
-                                    VStack{
-                                        Text("harcelement") ;
-                                        Text("0909090909")
-                                        
-                                        
-                                    }
-                                    .padding(20);                                 Image("phone-call")
-                                    .resizable()
-                                    .frame(width:30,height: 30)
-                                    .background(
-                                        Circle()
-                                            .foregroundColor(.green)
-                                            .frame(width:70, height:70)                                       )
-                                    
-                                }
-                            }}
-                        
-                        
-                        
-                    }
-                }
-                Spacer()
-                
-            }
+            Contactimportant()
             
         }
         
@@ -132,3 +39,102 @@ struct ContentView: View {
         }
     }
 
+
+struct Contactimportant: View {
+    var body: some View {
+        List{
+            VStack{
+                ZStack{
+                    
+                    Rectangle()
+                        .cornerRadius(20)
+                        .frame(width:350, height: 100)
+                    
+                        .foregroundColor(Color.gray)
+                    HStack{
+                        VStack{
+                            Text("medecin") ;
+                            Text("0909090909")
+                            
+                            
+                        }
+                        .padding(20)
+                        Image("phone-call")
+                            .resizable()
+                            .frame(width:30,height: 30)
+                            .background(
+                                Circle()
+                                    .foregroundColor(.green)
+                                
+                                    .frame(width:70, height:70)                            )
+                        
+                    }
+                }
+                VStack{
+                    
+                    
+                    ZStack{
+                        
+                        Rectangle()
+                            .cornerRadius(20)
+                            .frame(width:350, height: 100)
+                        
+                            .foregroundColor(Color.gray)
+                        HStack{
+                            VStack{
+                                Text("infirmerie") ;
+                                Text("0909090909")
+                                
+                                
+                            }
+                            .padding(20);                            Image("phone-call")
+                            .resizable()
+                            .frame(width:30,height: 30)
+                            .background(
+                                Circle()
+                                    .foregroundColor(.green)
+                                    .frame(width:70, height:70)                                   )
+                            
+                            
+                            
+                            
+                        }
+                    }
+                    
+                    VStack{
+                        
+                        
+                        ZStack{
+                            
+                            Rectangle()
+                                .cornerRadius(20)
+                                .frame(width:350, height: 100)
+                            
+                                .foregroundColor(Color.gray)
+                            HStack{
+                                VStack{
+                                    Text("harcelement") ;
+                                    Text("0909090909")
+                                    
+                                    
+                                }
+                                .padding(20);                                 Image("phone-call")
+                                .resizable()
+                                .frame(width:30,height: 30)
+                                .background(
+                                    Circle()
+                                        .foregroundColor(.green)
+                                        .frame(width:70, height:70)                                       )
+                                
+                            }
+                        }}
+                    
+                    
+                    
+                }
+            }
+            Spacer()
+            
+        }
+    }
+}
