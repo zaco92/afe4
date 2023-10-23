@@ -9,10 +9,7 @@ import SwiftUI
 
 struct docEleve: View {
     var body: some View {
-        
         ZStack{
-            //               NavigationView{
-            
             Rectangle()
                 .cornerRadius(50)
                 .frame(width:350, height: 100)
@@ -20,51 +17,37 @@ struct docEleve: View {
             Text("Documents")
                 .font(.title)
         }
-        
-        
-        VStack{
-            NavigationView{
-                List{
-                    NavigationLink(destination: ItemDetailView()){
-                        Text("atestation maladie")
-                            .font(.title2)
-                        
-                        
-                        Text("justificatif de domicile")
-                            .font(.title2)
-                        
-                        
-                        Text("documents tiers")
-                            .font(.title2)
-                        
-                        
-                        Text("les cartes")
-                            .font(.title2)
-                        
-                            
-                    }
-                    
-                    
-                }
-                
-            }
-            
-            
-            
+
+        NavigationView {
+            ExtractedView()
         }
-        
+
     }
-    
-    
+
 }
-    struct ItemDetailView: View {
-            var body: some View {
-                Text("selected message.")
-                    .font(.headline)
-                    
+
+struct ExtractedView: View {
+    var body: some View {
+        List{
+            NavigationLink(destination: besoinAide()) {
+                Text("Attestation maladie")
             }
+            NavigationLink(destination: besoinAide()) {
+                Text("Justificatif de domicile")
+            }
+            NavigationLink(destination:besoinAide ()) {
+                Text("Documents tiers")
+            }
+            NavigationLink(destination: besoinAide()) {
+                Text("Les cartes")
+            }
+        }
+    }
 }
-    
+
+
+
+
 #Preview {
     docEleve()
 }
